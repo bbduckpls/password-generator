@@ -206,6 +206,10 @@ button:hover {
   background-color: #5B21B6;
 }
 
+.light-mode .character-number {
+  color: #047857;
+}
+
 .light-mode button:hover {
   background-color: #4C1D95;
 }
