@@ -70,17 +70,31 @@ function lightMode() {
     element.classList.toggle("light-mode")
 }
 
-// copy password text
+// copy password one text
 passwordOne.addEventListener("click", (event) => {
     document.execCommand("copy");
     event.preventDefault(); // don't run default event stuff
-    console.log(navigator.clipboard.read())
+    alert("Copied!")
 } )
 
 passwordOne.addEventListener("copy", (event) => {
   event.preventDefault();
   if (event.clipboardData) {
     event.clipboardData.setData("text/plain", passwordOne.textContent);
-    console.log(event.clipboardData.getData("text"))
   }
 });
+
+// copy password two text
+passwordTwo.addEventListener("click", (event) => {
+    document.execCommand("copy");
+    event.preventDefault(); // don't run default event stuff
+    alert("Copied!")
+} )
+
+passwordTwo.addEventListener("copy", (event) => {
+  event.preventDefault();
+  if (event.clipboardData) {
+    event.clipboardData.setData("text/plain", passwordTwo.textContent);
+  }
+});
+
