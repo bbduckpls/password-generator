@@ -71,7 +71,6 @@ function lightMode() {
 }
 
 // copy password text
-let passwordOne = document.getElementById("password-one")
 passwordOne.addEventListener("click", (event) => {
     document.execCommand("copy");
     event.preventDefault(); // don't run default event stuff
