@@ -28,7 +28,7 @@ function includeCharacters() {
         availableCharacters = letters.concat(symbols)
     } else if (lettersIncluded.checked === false && numbersIncluded.checked === true && symbolsIncluded.checked === true) { // numbers + symbols
         availableCharacters = numbers.concat(symbols)
-    } else if (lettersIncluded.checked === false && numbersIncluded.checked === false && symbolsIncluded === false) { // none selected
+    } else if (lettersIncluded.checked === false && numbersIncluded.checked === false && symbolsIncluded.checked === false) { // none selected
         alert("Please select at least one checkbox")
     }
 }
