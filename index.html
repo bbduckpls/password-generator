@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <!-- font awesome icons -->
+        <script src="https://kit.fontawesome.com/dc46883e79.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="top-section">
+            <div id="main-body">
+                <h1>Generate a <div id="highlight">random password</div></h1>
+                <p id="tagline">Never use an insecure password again.</p>
+                <div class="selectors">
+                    <div class="slide-container">
+                        <p id="character-selector">Characters: <span id="character-number"></span></p>
+                        <input type="range" min="1" max="50" value="25" class="slider" id="character-range">
+                    </div>
+                    <label class="selector">Letters:
+                        <input type="checkbox" class="checkbox" id="letters" value="coding" onclick="includeCharacters()" checked/>
+                        <span class="checkmark fa-solid fa-xmark"></span>
+                    </label>
+                    <label class="selector">Numbers:
+                        <input type="checkbox" class="checkbox" id="numbers" value="coding" onclick="includeCharacters()" checked/>
+                        <span class="checkmark fa-solid fa-xmark"></span>
+                    </label>
+                    <label class="selector">Symbols:
+                        <input type="checkbox" class="checkbox" id="symbols" value="symbols" onclick="includeCharacters()" checked/>
+                        <span class="checkmark fa-solid fa-xmark""></span>
+                    </label>
+                </div>
+                <button onclick="generatePasswords()" id="generate-btn">Generate passwords</button>
+            </div>
+            <div id="dark-btn">
+                <i class="fa-solid fa-moon fa-xl" id="moon" onclick="lightMode()"></i>
+            </div>
+        </div>
+        <div id="passwords">
+            <p id="password-one"></p>
+            <p id="password-two"></p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

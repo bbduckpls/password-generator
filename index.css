@@ -1,0 +1,223 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #1F2937;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ECFDF5;
+    margin: 50px;
+
+}
+
+#top-section {
+    border-bottom: 1px solid #2F3E53;
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-body {
+  width: 40%;
+}
+
+h1 {
+    font-family: "Karla", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin: 0;
+    width: 100%;
+}
+
+#highlight {
+    color: #4ADF86;
+}
+
+#tagline {
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #D5D4D8;
+}
+
+button {
+    background-color: #4ADF86;
+    color: #ECFDF5;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+}
+
+button:hover {
+  background-color: #059669;
+  cursor: pointer; /* Cursor on hover */
+}
+
+/* dark mode icon */
+
+#dark-btn {
+  text-align: right;
+}
+
+#moon {
+  background-color: #ECFDF5;
+  color: #1F2937;
+  padding: 20px 12px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+#moon:hover {
+  cursor: pointer; /* Cursor on hover */
+}
+
+/*all selectors*/
+.selectors {
+  display: flex;
+  margin: 40px 0;
+}
+
+/* checkbox sections */
+
+.selector input {
+  margin: 5px; /* space above checkbox */
+  text-align: center;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.selector {
+  padding: 0 10px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkmark {
+  background-color: #ECFDF5;
+  padding: 3px 5px;
+  border-radius: 6px;
+}
+
+.checkmark:hover {
+  cursor: pointer;
+}
+
+/* checkbox when checked */ 
+.selector input:checked ~ .checkmark {
+  color: #1F2937;
+  padding: 3px 5px;
+  background-color: #4ADF86;
+}
+
+/* character slider */
+#character-selector {
+  margin: 0;
+  padding-bottom: 10px; /*character selector line space under*/
+}
+
+#character-number {
+  color: #4ADF86;
+  font-size: 18px;
+  padding: 0 5px;
+}
+
+.slide-container {
+  width: 70%; /* Width of the outside container */
+}
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  height: 5px; /* Specified height */
+  background: #D5D4D8;
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border-radius: 5px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: #4ADF86; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 100%;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4ADF86; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 100%;
+}
+
+#passwords {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#password-one, #password-two {
+    background-color: #273549;
+    color: #4ADF86;
+    border-radius: 6px;
+    width: 45%;
+    padding: 15px;
+    text-align: center;
+    min-height: 20px;
+}
+
+#password-one:hover, #password-two:hover {
+  background-color: #374151;
+}
+
+/* light mode */
+.light-mode {
+  background-color: #ECFDF5;
+  color: #2B283A;
+}
+
+.light-mode #tagline {
+  color: #1F2937;
+}
+
+/* checkbox when checked in light mode*/ 
+.light-mode .selector input:checked ~ .checkmark {
+  color: #ECFDF5;
+  padding: 3px 5px;
+  background-color: #4ADF86;
+}
+
+.light-mode .checkmark {
+  background-color: #1F2937;
+  border-radius: 6px;
+}
+
+.light-mode .slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  height: 5px; /* Specified height */
+  background: #2F3E53;
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border-radius: 5px;
+}
+
+/* Mouse-over effects */
+.light-mode .slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
