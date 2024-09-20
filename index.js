@@ -28,7 +28,7 @@ function includeCharacters() {
         availableCharacters = letters.concat(symbols)
     } else if (lettersIncluded.checked === false && numbersIncluded.checked === true && symbolsIncluded.checked === true) { // numbers + symbols
         availableCharacters = numbers.concat(symbols)
-    } else { // none selected
+    } else if (lettersIncluded.checked === false && numbersIncluded.checked === false && symbolsIncluded === false) { // none selected
         alert("Please select at least one checkbox")
     }
 }
@@ -97,4 +97,3 @@ passwordTwo.addEventListener("copy", (event) => {
     event.clipboardData.setData("text/plain", passwordTwo.textContent);
   }
 });
-
