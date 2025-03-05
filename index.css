@@ -2,15 +2,15 @@ body {
     font-family: "Inter", sans-serif;
     background-color: #1F2937;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     color: #ECFDF5;
-    margin: 50px;
+    margin: 3.125em;
 
 }
 
 #top-section {
     border-bottom: 1px solid #2F3E53;
-    padding-bottom: 35px;
+    padding-bottom: 2.19em;
     display: flex;
     justify-content: space-between;
 }
@@ -22,7 +22,7 @@ body {
 h1 {
     font-family: "Karla", sans-serif;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 0;
     width: 100%;
 }
@@ -33,8 +33,8 @@ h1 {
 
 #tagline {
     font-weight: 300;
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 1.25rem;
+    margin-top: 0.625em;
     color: #D5D4D8;
 }
 
@@ -43,7 +43,7 @@ button {
     color: #ECFDF5;
     border: none;
     border-radius: 6px;
-    padding: 12px 20px;
+    padding: 0.75em 1.25em;
     font-weight: bold;
 }
 
@@ -61,7 +61,7 @@ button:hover {
 #moon {
   background-color: #ECFDF5;
   color: #1F2937;
-  padding: 20px 12px;
+  padding: 0.75em 1.25em;
   text-align: center;
   border-radius: 100%;
 }
@@ -73,13 +73,13 @@ button:hover {
 /*all selectors*/
 .selectors {
   display: flex;
-  margin: 40px 0;
+  margin: 2.5em 0;
 }
 
 /* checkbox sections */
 
 .selector input {
-  margin: 5px; /* space above checkbox */
+  margin: 0.312em; /* space above checkbox */
   text-align: center;
   opacity: 0;
   cursor: pointer;
@@ -88,7 +88,7 @@ button:hover {
 }
 
 .selector {
-  padding: 0 10px;
+  padding: 0 0.625em;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -97,7 +97,7 @@ button:hover {
 
 .checkmark {
   background-color: #ECFDF5;
-  padding: 3px 5px;
+  padding: 0.188em 0.312em;
   border-radius: 6px;
 }
 
@@ -108,20 +108,20 @@ button:hover {
 /* checkbox when checked */ 
 .selector input:checked ~ .checkmark {
   color: #1F2937;
-  padding: 3px 5px;
+  padding: 0.188em 0.312em;
   background-color: #34D399;
 }
 
 /* character slider */
 #character-selector {
   margin: 0;
-  padding-bottom: 15px; /*character selector line space under*/
+  padding-bottom: 0.937em; /*character selector line space under*/
 }
 
 #character-number {
   color: #34D399;
-  font-size: 18px;
-  padding: 0 5px;
+  font-size: 1.125rem;
+  padding: 0 0.312em;
 }
 
 .slide-container {
@@ -165,7 +165,7 @@ button:hover {
 }
 
 #passwords {
-    padding-top: 15px;
+    padding-top: 0.938em;
     display: flex;
     justify-content: space-between;
 }
@@ -175,7 +175,7 @@ button:hover {
     color: #4ADF86;
     border-radius: 6px;
     width: 45%;
-    padding: 15px;
+    padding: 0.938em;
     text-align: center;
     min-height: 20px;
 }
@@ -217,7 +217,7 @@ button:hover {
 /* checkbox when checked in light mode*/ 
 .light-mode .selector input:checked ~ .checkmark {
   color: #ECFDF5;
-  padding: 3px 5px;
+  padding: 0.188em 0.313em;
   background-color: #047857;
 }
 
